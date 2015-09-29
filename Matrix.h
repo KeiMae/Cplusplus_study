@@ -50,6 +50,7 @@ public:
   Matrix inverse() const;
   Matrix t() const;
   Matrix ljoint (const Matrix&);
+  Matrix reverse(const int);
   double mean (int);
   double variance(int);
   double sum(int);

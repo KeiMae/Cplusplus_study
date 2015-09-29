@@ -203,6 +203,15 @@ Matrix Matrix::ljoint(const Matrix& mat1){
   return tmp;
 }
 
+Matrix Matrix::reverse(const int c){
+  Matrix tmp(row,1);
+  for(int r=0; i < row; i++){
+    tmp[r][0] = (*this)[row - r - 1][c];
+  }
+  return tmp;
+
+}
+
 double Matrix::mean(int c){
   double sum = 0;
   for(int i = 0; i < row; i++){
